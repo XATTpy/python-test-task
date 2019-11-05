@@ -39,3 +39,31 @@ The following is a list of requirements for the function:
 - The function shall accept a single parameter N
 - If the parameter is not a valid even integer number the `ArgumentError` exception shall be thrown
 - The result of the task shall be provided a single python file named `flag.py` with a function named `flag` defined in it
+
+
+# Quickstart
+
+Example of script launch on Linux, Python 3.6:
+```bash
+
+$ python flag.py 6 # possibly requires call of python3 executive instead of just python
+####################
+#                  #
+#                  #
+#                  #
+#        **        #
+#       *oo*       #
+#      *oooo*      #
+#      *oooo*      #
+#       *oo*       #
+#        **        #
+#                  #
+#                  #
+#                  #
+####################
+
+```
+
+# Project Goals
+
+The code is written for educational purposes.
