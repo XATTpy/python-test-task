@@ -1,9 +1,14 @@
 from sys import argv, exit
 
 
+class ArgumentError(Exception):
+    def __init__(self, text):
+        self.txt = text
+
+
 def flag(n):
     if type(n) != int or n <= 0 or n % 2 == 1:
-        raise Exception('ArgumentError')
+        raise ArgumentError("value is not valid, {}".format(n))
 
     vert_dist = int(n/2)
     circle = ""
